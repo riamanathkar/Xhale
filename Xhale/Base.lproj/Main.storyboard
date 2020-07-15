@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-07-15 at 11.57.00 AM" translatesAutoresizingMaskIntoConstraints="NO" id="tx8-m2-qPz">
-                                <rect key="frame" x="-36" y="0.0" width="489" height="928"/>
+                                <rect key="frame" x="-37" y="-16" width="489" height="928"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xhale logo" translatesAutoresizingMaskIntoConstraints="NO" id="dAh-T9-BNl">
@@ -27,6 +27,32 @@
                                 <rect key="frame" x="87" y="95" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8Z-X2-hfw">
+                                <rect key="frame" x="156" y="694" width="102" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="104"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.99204951524734497" green="0.99221879243850708" blue="0.9920387864112854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ghI-rS-d4h" kind="show" id="eqS-Yf-6Wf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruC-lz-NoK">
+                                <rect key="frame" x="36" y="754" width="112" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="mood">
+                                    <color key="titleColor" red="0.99204951524734497" green="0.99221879243850708" blue="0.9920387864112854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNs-od-Qhe">
+                                <rect key="frame" x="297" y="757" width="97" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="register"/>
+                                <connections>
+                                    <segue destination="tnk-IO-aHD" kind="show" id="hpi-Gc-aGT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -41,7 +67,7 @@
             <objects>
                 <viewController id="ghI-rS-d4h" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KF8-zs-hJP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled-1" translatesAutoresizingMaskIntoConstraints="NO" id="PIc-aj-wRz">
@@ -92,6 +118,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="guk-iy-gNC"/>
                     </view>
+                    <navigationItem key="navigationItem" id="NAZ-eU-UQw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IbV-Rq-bOl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,7 +129,7 @@
             <objects>
                 <viewController id="tnk-IO-aHD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9T-Gr-vcu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-07-15 at 11.57.00 AM" translatesAutoresizingMaskIntoConstraints="NO" id="Vew-fb-xjM">
@@ -136,6 +163,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="VSQ-15-kFg"/>
                     </view>
+                    <navigationItem key="navigationItem" id="c6j-Ba-9FC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9s-EE-E1R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,6 +173,8 @@
     <resources>
         <image name="Screen Shot 2020-07-15 at 11.57.00 AM" width="278" height="612"/>
         <image name="Untitled-1" width="4688" height="10094"/>
+        <image name="mood" width="128" height="128"/>
+        <image name="register" width="128" height="128"/>
         <image name="resource tile" width="3295" height="2949"/>
         <image name="smileyface2" width="843" height="704"/>
         <image name="smileyface3" width="785" height="704"/>
