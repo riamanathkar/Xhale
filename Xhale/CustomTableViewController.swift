@@ -2,15 +2,14 @@
 //  CustomTableViewController.swift
 //  Xhale
 //
-//  Created by Ria M on 7/16/20.
+//  Created by Muryam Hasan on 7/16/20.
 //  Copyright © 2020 Ria Manathkar. All rights reserved.
 //
 
 import UIKit
 
 class CustomTableViewController: UITableViewController {
-    
-   // var addedMoods : [moodTracker] = []
+
     var addedMoods = [moodTracker]()
     
     override func viewDidLoad() {
@@ -25,88 +24,19 @@ class CustomTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-   /*   override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 10
     }
-*/
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
-        return addedMoods.count
-    }
-    
-    /*
- func createMoods() -> [moodTracker] {
-        
-        let first = moodTracker()
-        first.mood = 1.0
-        first.note = "Kah Sponges rock!"
-        first.date = "July 15, 2020"
-        addedMoods.append(first)
-        
 
-        let second = moodTracker()
-        second.mood = 5.0
-        second.note = "omg this worked!"
-        second.date = "September 7, 2005"
-        addedMoods.append(second)
-      // important is set to false by default
-
-      return [first, second]
-    }
-    */
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-           
-          let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-           //let cell = UITableViewCell()
-            let entry = addedMoods[indexPath.row]
-        
-           cell.textLabel?.text = entry.note
-            cell.backgroundColor = UIColor.blue
-              
-               if entry.mood == 1.0
-               {
-                 cell.imageView?.image = UIImage(named: "smileyfaces")
-               }
-                  else if entry.mood == 2.0
-                   {
-                     cell.imageView?.image = UIImage(named: "smileyface2")
-                   }
-                       else if entry.mood == 3.0
-                       {
-                         cell.imageView?.image = UIImage(named: "smileyface3")
-                       }
-                           else if entry.mood == 4.0
-                           {
-                             cell.imageView?.image = UIImage(named: "smileyface4")
-                           }
-                               else
-                               {
-                                 cell.imageView?.image = UIImage(named: "smileyface5")
-                               }
-                   // CustomTableView.tableView.reloadData()
-                   return cell
-               }
- 
-        
-       /*  let entry = addedMoods[indexPath.row]
+       let cell = UITableViewCell()
+        cell.textLabel?.text = "test"
+        cell.imageView?.image = UIImage(named: "mood")
+        // Configure the cell...
 
-        if entry.mood == 1.0
-        {
-          cell.moodImage?.image = UIImage(named: "smileyfaces")
-        }
-        else if entry.mood == 5.0
-        {
-          cell.moodImage?.image = UIImage(named: "smileyface5")
-        }
-         
- */
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         if let addVC = segue.destination as? AddMoodViewController {
-           addVC.previousVC = self
-         }
-       }
+        return cell
+    }
 
     /*
     // Override to support conditional editing of the table view.

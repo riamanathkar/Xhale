@@ -50,6 +50,10 @@ class AddMoodViewController: UIViewController {
     
     @IBAction func addTapped(_ sender: Any)
     {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+        //let journalNote = date(entity: date.entity(), insertInto: context)
+            //journalNote.mood = emotion
+            
         let mood = moodTracker()
         mood.mood = emotion
         
@@ -66,6 +70,7 @@ class AddMoodViewController: UIViewController {
         
     }
     }
+}
     
    
     /*

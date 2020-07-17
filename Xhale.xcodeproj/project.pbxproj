@@ -15,11 +15,14 @@
 		1011EFC924BF878500FB8CC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1011EFC824BF878500FB8CC2 /* Assets.xcassets */; };
 		1011EFCC24BF878500FB8CC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1011EFCA24BF878500FB8CC2 /* LaunchScreen.storyboard */; };
 		1049B43124C0C66900A2FB85 /* AddMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1049B43024C0C66900A2FB85 /* AddMoodViewController.swift */; };
-		1049B43324C0C74700A2FB85 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1049B43224C0C74700A2FB85 /* CustomTableViewController.swift */; };
 		1049B43524C0C82000A2FB85 /* moodTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1049B43424C0C82000A2FB85 /* moodTracker.swift */; };
 		1049B43824C0D36B00A2FB85 /* smileyfaces.png in Resources */ = {isa = PBXBuildFile; fileRef = 1049B43624C0D36A00A2FB85 /* smileyfaces.png */; };
 		1049B43924C0D36B00A2FB85 /* smileyface5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1049B43724C0D36B00A2FB85 /* smileyface5.png */; };
 		18548FA724C14247005E7E78 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18548FA624C14247005E7E78 /* ResourcesViewController.swift */; };
+		3964BACA24C1525600DFEFEA /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964BAC924C1525600DFEFEA /* CustomTableViewController.swift */; };
+		3964BACC24C15DF000DFEFEA /* breathegif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964BACB24C15DF000DFEFEA /* breathegif.swift */; };
+		3964BACE24C15E5300DFEFEA /* GIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964BACD24C15E5300DFEFEA /* GIFViewController.swift */; };
+		3964BAD024C15F2000DFEFEA /* breathe-gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3964BACF24C15F2000DFEFEA /* breathe-gif.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +36,14 @@
 		1011EFCB24BF878500FB8CC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1011EFCD24BF878500FB8CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1049B43024C0C66900A2FB85 /* AddMoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMoodViewController.swift; sourceTree = "<group>"; };
-		1049B43224C0C74700A2FB85 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 		1049B43424C0C82000A2FB85 /* moodTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodTracker.swift; sourceTree = "<group>"; };
 		1049B43624C0D36A00A2FB85 /* smileyfaces.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smileyfaces.png; sourceTree = "<group>"; };
 		1049B43724C0D36B00A2FB85 /* smileyface5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smileyface5.png; sourceTree = "<group>"; };
 		18548FA624C14247005E7E78 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+		3964BAC924C1525600DFEFEA /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		3964BACB24C15DF000DFEFEA /* breathegif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breathegif.swift; sourceTree = "<group>"; };
+		3964BACD24C15E5300DFEFEA /* GIFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFViewController.swift; sourceTree = "<group>"; };
+		3964BACF24C15F2000DFEFEA /* breathe-gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "breathe-gif.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,9 @@
 				1011EFBE24BF877F00FB8CC2 /* SceneDelegate.swift */,
 				1011EFC024BF877F00FB8CC2 /* ViewController.swift */,
 				1011EFC224BF877F00FB8CC2 /* Main.storyboard */,
+				3964BACD24C15E5300DFEFEA /* GIFViewController.swift */,
+				3964BACF24C15F2000DFEFEA /* breathe-gif.gif */,
+				3964BACB24C15DF000DFEFEA /* breathegif.swift */,
 				1011EFC824BF878500FB8CC2 /* Assets.xcassets */,
 				1049B43724C0D36B00A2FB85 /* smileyface5.png */,
 				1049B43624C0D36A00A2FB85 /* smileyfaces.png */,
@@ -81,9 +90,9 @@
 				1011EFCD24BF878500FB8CC2 /* Info.plist */,
 				1011EFC524BF877F00FB8CC2 /* Xhale.xcdatamodeld */,
 				1049B43024C0C66900A2FB85 /* AddMoodViewController.swift */,
-				1049B43224C0C74700A2FB85 /* CustomTableViewController.swift */,
 				1049B43424C0C82000A2FB85 /* moodTracker.swift */,
 				18548FA624C14247005E7E78 /* ResourcesViewController.swift */,
+				3964BAC924C1525600DFEFEA /* CustomTableViewController.swift */,
 			);
 			path = Xhale;
 			sourceTree = "<group>";
@@ -147,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1011EFCC24BF878500FB8CC2 /* LaunchScreen.storyboard in Resources */,
+				3964BAD024C15F2000DFEFEA /* breathe-gif.gif in Resources */,
 				1011EFC924BF878500FB8CC2 /* Assets.xcassets in Resources */,
 				1011EFC424BF877F00FB8CC2 /* Main.storyboard in Resources */,
 				1049B43924C0D36B00A2FB85 /* smileyface5.png in Resources */,
@@ -165,9 +175,11 @@
 				1049B43124C0C66900A2FB85 /* AddMoodViewController.swift in Sources */,
 				18548FA724C14247005E7E78 /* ResourcesViewController.swift in Sources */,
 				1049B43524C0C82000A2FB85 /* moodTracker.swift in Sources */,
+				3964BACA24C1525600DFEFEA /* CustomTableViewController.swift in Sources */,
+				3964BACE24C15E5300DFEFEA /* GIFViewController.swift in Sources */,
+				3964BACC24C15DF000DFEFEA /* breathegif.swift in Sources */,
 				1011EFC124BF877F00FB8CC2 /* ViewController.swift in Sources */,
 				1011EFBD24BF877F00FB8CC2 /* AppDelegate.swift in Sources */,
-				1049B43324C0C74700A2FB85 /* CustomTableViewController.swift in Sources */,
 				1011EFBF24BF877F00FB8CC2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
