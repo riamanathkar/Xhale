@@ -19,6 +19,7 @@
 		1049B43524C0C82000A2FB85 /* moodTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1049B43424C0C82000A2FB85 /* moodTracker.swift */; };
 		1049B43824C0D36B00A2FB85 /* smileyfaces.png in Resources */ = {isa = PBXBuildFile; fileRef = 1049B43624C0D36A00A2FB85 /* smileyfaces.png */; };
 		1049B43924C0D36B00A2FB85 /* smileyface5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1049B43724C0D36B00A2FB85 /* smileyface5.png */; };
+		18548FA724C14247005E7E78 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18548FA624C14247005E7E78 /* ResourcesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		1049B43424C0C82000A2FB85 /* moodTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moodTracker.swift; sourceTree = "<group>"; };
 		1049B43624C0D36A00A2FB85 /* smileyfaces.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smileyfaces.png; sourceTree = "<group>"; };
 		1049B43724C0D36B00A2FB85 /* smileyface5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smileyface5.png; sourceTree = "<group>"; };
+		18548FA624C14247005E7E78 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				1049B43024C0C66900A2FB85 /* AddMoodViewController.swift */,
 				1049B43224C0C74700A2FB85 /* CustomTableViewController.swift */,
 				1049B43424C0C82000A2FB85 /* moodTracker.swift */,
+				18548FA624C14247005E7E78 /* ResourcesViewController.swift */,
 			);
 			path = Xhale;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			files = (
 				1011EFC724BF877F00FB8CC2 /* Xhale.xcdatamodeld in Sources */,
 				1049B43124C0C66900A2FB85 /* AddMoodViewController.swift in Sources */,
+				18548FA724C14247005E7E78 /* ResourcesViewController.swift in Sources */,
 				1049B43524C0C82000A2FB85 /* moodTracker.swift in Sources */,
 				1011EFC124BF877F00FB8CC2 /* ViewController.swift in Sources */,
 				1011EFBD24BF877F00FB8CC2 /* AppDelegate.swift in Sources */,

@@ -188,10 +188,10 @@
             </objects>
             <point key="canvasLocation" x="133.33333333333334" y="776.78571428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Resources View Controller-->
         <scene sceneID="4JE-zY-EEf">
             <objects>
-                <viewController id="tnk-IO-aHD" sceneMemberID="viewController">
+                <viewController id="tnk-IO-aHD" customClass="ResourcesViewController" customModule="Xhale" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9T-Gr-vcu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,11 +209,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="resource tile" translatesAutoresizingMaskIntoConstraints="NO" id="xZH-M9-GeU">
-                                <rect key="frame" x="44" y="180" width="327" height="239"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="resource tile" translatesAutoresizingMaskIntoConstraints="NO" id="kZK-BV-FVF">
-                                <rect key="frame" x="44" y="515" width="327" height="239"/>
+                                <rect key="frame" x="-39" y="195" width="491" height="239"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKK-vt-o0S">
@@ -223,6 +219,29 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ens-GU-jjM">
+                                <rect key="frame" x="164" y="381" width="84" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Support"/>
+                                <connections>
+                                    <action selector="Resource1Tapped:" destination="tnk-IO-aHD" eventType="touchUpInside" id="03O-TN-HNa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IV4-71-mLf">
+                                <rect key="frame" x="164" y="706" width="93" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="HelpLine"/>
+                                <connections>
+                                    <action selector="Resource2Tapped:" destination="tnk-IO-aHD" eventType="touchUpInside" id="5Dz-SA-dqD"/>
+                                    <action selector="ResourceTapped2:" destination="tnk-IO-aHD" eventType="touchUpInside" id="uQd-Su-970"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="resource tile" translatesAutoresizingMaskIntoConstraints="NO" id="kZK-BV-FVF">
+                                <rect key="frame" x="47" y="508" width="327" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="VSQ-15-kFg"/>
