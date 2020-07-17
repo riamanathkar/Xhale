@@ -54,20 +54,26 @@ class AddMoodViewController: UIViewController {
         //let journalNote = date(entity: date.entity(), insertInto: context)
             //journalNote.mood = emotion
             
-        let mood = moodTracker()
-        mood.mood = emotion
-        
-        if let noteText = noteText.text {
-        mood.note = noteText
-        }
-        
-        previousVC.addedMoods.append(mood)
-        previousVC.tableView.reloadData()
-        self.dismiss(animated: true)
-        
-        //print(previousVC.addedMoods[0].note)
-        //print(previousVC.addedMoods[0].mood)
-        
+        let mood = MoodCD(entity: MoodCD.entity(), insertInto: context)
+
+
+                if let noteText = noteText.text {
+                mood.note = noteText
+                    mood.mood = emotion
+                }
+                try? context.save()
+                self.dismiss(animated: true)
+                /*
+                previousVC.addedMoods.append(mood)
+                previousVC.tableView.reloadData()
+                self.dismiss(animated: true)
+                
+                for mood in previousVC.addedMoods
+                {
+                    print(mood.note)
+                }
+
+        */
     }
     }
 }
